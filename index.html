@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The AI Market Effect explores how AI companies reshape stock markets and global economic dynamics."
+    />
+    <title>The AI Market Effect</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8uoJf9v+2V5j4c+XW8y+qVg5dQvF5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-wrap" aria-label="Primary">
+        <a class="logo" href="index.html">The AI Market Effect</a>
+        <button
+          class="mobile-menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          aria-controls="primary-nav-links"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="primary-nav-links" class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="background.html">Background</a>
+          <a href="rise.html">Rise of AI</a>
+          <a href="economic-impact.html">Economic Impact</a>
+          <a href="risks.html">Risks</a>
+          <a href="regulation.html">Regulation</a>
+          <a href="sources.html">Sources</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- START: Hero Section -->
+      <section id="hero" class="hero">
+        <div class="container hero-content">
+          <span class="hero-eyebrow" data-reveal>Semester Research Project</span>
+          <h1 data-reveal data-delay="150">
+            How AI is Reshaping Global Financial Markets
+          </h1>
+          <p class="hero-subheadline" data-reveal data-delay="300">
+            Artificial intelligence is no longer just a technology trend - it is
+            now one of the most powerful forces driving stock markets, GDP
+            growth, and economic risk worldwide.
+          </p>
+          <div class="hero-cta" data-reveal data-delay="450">
+            <a class="btn btn-primary" href="#overview">Explore the Research</a>
+            <a class="btn btn-secondary" href="background.html">View Background</a>
+          </div>
+
+          <div class="stat-bar" data-reveal data-delay="450">
+            <article class="glass-card stat-item">
+              <strong>$4.4T</strong>
+              <span>Projected AI economic value (McKinsey)</span>
+            </article>
+            <article class="glass-card stat-item">
+              <strong>$13-16T</strong>
+              <span>Projected long-term market value added (Morgan Stanley)</span>
+            </article>
+            <article class="glass-card stat-item">
+              <strong>70%+</strong>
+              <span>Of U.S. equity trades executed by algorithms</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- END: Hero Section -->
+
+      <!-- START: Overview Section -->
+      <section id="overview" class="section section-alt">
+        <div class="container overview-grid">
+          <article data-reveal>
+            <span class="section-label">The Research Question</span>
+            <h2>Does AI improve markets - or threaten them?</h2>
+            <p>
+              Before AI, financial trading was driven entirely by human
+              decisions. Today, algorithms and machine learning account for the
+              majority of trades executed globally. This project investigates
+              whether that shift is a net positive for economic stability, or
+              whether it introduces dangerous new risks that regulators have yet
+              to address.
+            </p>
+            <blockquote class="thesis-callout">
+              Thesis: AI improves market efficiency but poses increased systemic
+              risks without proper regulation.
+            </blockquote>
+          </article>
+
+          <aside class="icon-list" data-reveal data-delay="150">
+            <article class="glass-card icon-card">
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+              <div>
+                <h3>Market Efficiency</h3>
+                <p>
+                  AI reduces transaction costs and increases liquidity across
+                  global markets.
+                </p>
+              </div>
+            </article>
+            <article class="glass-card icon-card">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              <div>
+                <h3>Volatility Risk</h3>
+                <p>
+                  Algorithmic feedback loops can accelerate crashes and market
+                  instability.
+                </p>
+              </div>
+            </article>
+            <article class="glass-card icon-card">
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+              <div>
+                <h3>Global Contagion</h3>
+                <p>
+                  AI-driven shocks in one market can instantly ripple worldwide.
+                </p>
+              </div>
+            </article>
+            <article class="glass-card icon-card">
+              <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+              <div>
+                <h3>Regulation Gap</h3>
+                <p>
+                  Policy frameworks have not kept pace with the speed of AI
+                  adoption in finance.
+                </p>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+      <!-- END: Overview Section -->
+
+      <!-- START: Site Map Preview Section -->
+      <section id="site-map-preview" class="section section-divider">
+        <div class="container">
+          <header class="cards-grid-header" data-reveal>
+            <h2 class="section-title-gradient">What This Site Covers</h2>
+            <p class="muted">Navigate through each section of the research below.</p>
+          </header>
+
+          <div class="site-map-grid">
+            <a class="glass-card site-map-card" href="background.html" data-reveal>
+              <span class="site-map-number">01</span>
+              <h3>Background</h3>
+              <p>
+                How stock markets work, what drives prices, and the rise of
+                algorithmic trading.
+              </p>
+              <i class="fa-solid fa-arrow-right site-map-arrow" aria-hidden="true"></i>
+            </a>
+            <a
+              class="glass-card site-map-card"
+              href="rise.html"
+              data-reveal
+              data-delay="150"
+            >
+              <span class="site-map-number">02</span>
+              <h3>Rise of AI Companies</h3>
+              <p>
+                Timeline and stock growth of major AI firms vs. the broader market.
+              </p>
+              <i class="fa-solid fa-arrow-right site-map-arrow" aria-hidden="true"></i>
+            </a>
+            <a
+              class="glass-card site-map-card"
+              href="economic-impact.html"
+              data-reveal
+              data-delay="300"
+            >
+              <span class="site-map-number">03</span>
+              <h3>Economic Impact</h3>
+              <p>
+                AI investment's effect on GDP, labor markets, and aggregate demand.
+              </p>
+              <i class="fa-solid fa-arrow-right site-map-arrow" aria-hidden="true"></i>
+            </a>
+            <a class="glass-card site-map-card" href="risks.html" data-reveal>
+              <span class="site-map-number">04</span>
+              <h3>Risks &amp; Volatility</h3>
+              <p>
+                Flash crashes, concentration risk, and global market contagion.
+              </p>
+              <i class="fa-solid fa-arrow-right site-map-arrow" aria-hidden="true"></i>
+            </a>
+            <a
+              class="glass-card site-map-card"
+              href="regulation.html"
+              data-reveal
+              data-delay="150"
+            >
+              <span class="site-map-number">05</span>
+              <h3>Regulation</h3>
+              <p>
+                The policy landscape and what proper oversight could look like.
+              </p>
+              <i class="fa-solid fa-arrow-right site-map-arrow" aria-hidden="true"></i>
+            </a>
+            <a
+              class="glass-card site-map-card"
+              href="sources.html"
+              data-reveal
+              data-delay="300"
+            >
+              <span class="site-map-number">06</span>
+              <h3>Sources</h3>
+              <p>Annotated bibliography and all data sources used.</p>
+              <i class="fa-solid fa-arrow-right site-map-arrow" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- END: Site Map Preview Section -->
+
+      <!-- START: Sources Preview Section -->
+      <section id="sources-preview" class="section">
+        <div class="container">
+          <header data-reveal>
+            <h2 class="section-title-gradient">Research Grounded In</h2>
+          </header>
+          <div class="glass-card sources-strip" data-reveal data-delay="150">
+            <article class="source-pill">
+              <strong>McKinsey &amp; Company</strong>
+              <span>The Economic Potential of Generative AI</span>
+            </article>
+            <article class="source-pill">
+              <strong>Nasdaq Research</strong>
+              <span>AI Driving Earnings and Economic Growth</span>
+            </article>
+            <article class="source-pill">
+              <strong>Morgan Stanley</strong>
+              <span>AI Could Affect 90% of Occupations</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- END: Sources Preview Section -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">The AI Market Effect</p>
+        <p class="muted">
+          A multi-page educational website on AI's influence on global stock
+          markets and the broader economy.
+        </p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="background.html">Background</a>
+          <a href="rise.html">Rise of AI</a>
+          <a href="economic-impact.html">Economic Impact</a>
+          <a href="risks.html">Risks</a>
+          <a href="regulation.html">Regulation</a>
+          <a href="sources.html">Sources</a>
+        </div>
+        <p class="credit">Semester Research Project</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+</html>

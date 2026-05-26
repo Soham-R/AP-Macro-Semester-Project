@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Background concepts for The AI Market Effect: stock markets, supply and demand, and algorithmic trading."
+    />
+    <title>Background | The AI Market Effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8uoJf9v+2V5j4c+XW8y+qVg5dQvF5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-wrap" aria-label="Primary">
+        <a class="logo" href="index.html">The AI Market Effect</a>
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" aria-controls="primary-nav-links">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="primary-nav-links" class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="background.html">Background</a>
+          <a href="rise.html">Rise of AI</a>
+          <a href="economic-impact.html">Economic Impact</a>
+          <a href="risks.html">Risks</a>
+          <a href="regulation.html">Regulation</a>
+          <a href="sources.html">Sources</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- START: Page Banner -->
+      <section class="page-banner">
+        <div class="container" data-reveal>
+          <p class="section-label">Foundations</p>
+          <h1>Background</h1>
+          <p>
+            Understanding stock markets, price discovery, and the rise of
+            algorithmic trading before AI.
+          </p>
+        </div>
+      </section>
+      <!-- END: Page Banner -->
+
+      <!-- START: Markets Explainer -->
+      <section id="markets-explainer" class="section">
+        <div class="container split-layout">
+          <article data-reveal>
+            <h2>What Are Stock Markets?</h2>
+            <p>
+              Stock markets are exchanges where buyers and sellers trade ownership
+              shares in publicly listed companies. The two most important indices
+              for this research are the S&amp;P 500 - tracking the 500 largest U.S.
+              companies - and the NASDAQ Composite, which is heavily weighted
+              toward technology firms.
+            </p>
+            <p>
+              Prices are determined by supply and demand: when more investors want
+              to buy a stock than sell it, prices rise. When confidence falls and
+              selling pressure increases, prices decline. These movements aggregate
+              into broader index values that economists use to gauge market health.
+            </p>
+          </article>
+          <aside class="definition-grid" data-reveal data-delay="150">
+            <article class="glass-card definition-card">
+              <h3>S&amp;P 500</h3>
+              <p>
+                An index tracking the 500 largest publicly traded U.S. companies by
+                market capitalization.
+              </p>
+            </article>
+            <article class="glass-card definition-card">
+              <h3>NASDAQ</h3>
+              <p>
+                A stock exchange and index heavily weighted toward technology and
+                growth companies.
+              </p>
+            </article>
+            <article class="glass-card definition-card">
+              <h3>Market Cap</h3>
+              <p>
+                Total market value of a company&rsquo;s outstanding shares. Used to
+                weight index composition.
+              </p>
+            </article>
+            <article class="glass-card definition-card">
+              <h3>Liquidity</h3>
+              <p>
+                How easily an asset can be bought or sold without affecting its
+                price.
+              </p>
+            </article>
+          </aside>
+        </div>
+      </section>
+      <!-- END: Markets Explainer -->
+
+      <!-- START: Supply Demand Section -->
+      <section id="supply-demand" class="section section-alt">
+        <div class="container text-visual-grid">
+          <article data-reveal>
+            <h2>Supply &amp; Demand in Markets</h2>
+            <p>
+              Classical economics explains stock prices through supply and demand
+              curves. High investor confidence and strong earnings expectations
+              shift the demand curve right, raising equilibrium price. Panic, poor
+              earnings, or macroeconomic shocks shift demand left, pushing prices
+              down.
+            </p>
+            <p>
+              AI has disrupted this by allowing institutions to react to signals in
+              milliseconds - compressing what once took hours into fractions of a
+              second.
+            </p>
+          </article>
+          <article class="glass-card svg-card" data-reveal data-delay="150">
+            <svg viewBox="0 0 420 290" role="img" aria-label="Supply and demand diagram">
+              <line x1="50" y1="20" x2="50" y2="250" stroke="#f1f5f9" stroke-width="2" />
+              <line x1="50" y1="250" x2="390" y2="250" stroke="#f1f5f9" stroke-width="2" />
+              <text x="18" y="35">Price</text>
+              <text x="350" y="275">Quantity</text>
+
+              <line x1="90" y1="220" x2="320" y2="70" stroke="#3b82f6" stroke-width="3" />
+              <text x="325" y="68">S</text>
+
+              <line x1="90" y1="80" x2="320" y2="210" stroke="#06b6d4" stroke-width="3" />
+              <text x="325" y="215">D</text>
+
+              <line x1="110" y1="100" x2="340" y2="230" stroke="#38bdf8" stroke-width="3" stroke-dasharray="8 5" />
+              <text x="345" y="235">D2</text>
+
+              <circle cx="206" cy="145" r="5" fill="#f1f5f9" />
+              <text x="212" y="142">E1</text>
+
+              <circle cx="198" cy="150" r="5" fill="#f1f5f9" />
+              <text x="204" y="170">E2</text>
+              <text x="252" y="176" fill="#94a3b8">AI investment surge</text>
+            </svg>
+          </article>
+        </div>
+      </section>
+      <!-- END: Supply Demand Section -->
+
+      <!-- START: Algorithmic Trading Section -->
+      <section id="algorithmic-trading" class="section">
+        <div class="container">
+          <article data-reveal>
+            <h2>The Rise of Algorithmic Trading</h2>
+            <p>
+              Prior to the 1990s, virtually all stock trading was executed
+              manually by human brokers on exchange floors. The introduction of
+              electronic trading systems in the late 1990s began a decades-long
+              shift toward automation. By the 2010s, high-frequency trading firms
+              were executing millions of trades per second using rule-based
+              algorithms.
+            </p>
+            <p>
+              Today, machine learning has taken this further. Instead of
+              rule-based systems, AI models learn from historical market data, news
+              sentiment, economic indicators, and even social media to identify
+              patterns and execute trades with minimal human oversight.
+            </p>
+          </article>
+          <div class="stat-callouts">
+            <article class="stat-callout" data-reveal>
+              <strong>70-80%</strong>
+              <span>Share of U.S. equity volume driven by algorithmic trading</span>
+            </article>
+            <article class="stat-callout" data-reveal data-delay="150">
+              <strong>~Microseconds</strong>
+              <span>Typical execution speed of high-frequency AI trades</span>
+            </article>
+            <article class="stat-callout" data-reveal data-delay="300">
+              <strong>1990s</strong>
+              <span>Decade when electronic trading began replacing floor brokers</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- END: Algorithmic Trading Section -->
+
+      <!-- START: Business Cycle Section -->
+      <section id="business-cycle" class="section section-alt">
+        <div class="container">
+          <article data-reveal>
+            <h2>The Business Cycle &amp; AI Investment</h2>
+            <p>
+              The business cycle describes recurring phases of economic expansion,
+              peak, contraction, and trough. AI investment has closely tracked this
+              cycle - and in some ways amplified it.
+            </p>
+          </article>
+
+          <div class="timeline-shell">
+            <div class="cycle-track" data-reveal data-delay="150">
+              <button
+                class="cycle-node expansion"
+                data-title="Expansion"
+                data-detail="Investor optimism is strong, funding rises, and AI equity valuations expand quickly."
+                type="button"
+              >
+                <span class="phase-dot"></span>
+                <h3>Expansion</h3>
+                <p>Capital inflows accelerate</p>
+              </button>
+              <button
+                class="cycle-node peak"
+                data-title="Peak"
+                data-detail="Valuations become stretched, expectations are highest, and downside risk builds beneath momentum."
+                type="button"
+              >
+                <span class="phase-dot"></span>
+                <h3>Peak</h3>
+                <p>Valuations max out</p>
+              </button>
+              <button
+                class="cycle-node contraction"
+                data-title="Contraction"
+                data-detail="Higher rates and weaker confidence pressure high-multiple AI firms more than broad indexes."
+                type="button"
+              >
+                <span class="phase-dot"></span>
+                <h3>Contraction</h3>
+                <p>Risk-off repricing</p>
+              </button>
+              <button
+                class="cycle-node trough"
+                data-title="Trough"
+                data-detail="Capital rotates into quality leaders, setting up the next expansion with more selective AI exposure."
+                type="button"
+              >
+                <span class="phase-dot"></span>
+                <h3>Trough</h3>
+                <p>Reset and consolidation</p>
+              </button>
+            </div>
+            <article class="glass-card timeline-detail" data-reveal data-delay="300">
+              <h3 id="cycle-detail-title">Expansion</h3>
+              <p id="cycle-detail-text">
+                Investor optimism is strong, funding rises, and AI equity
+                valuations expand quickly.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- END: Business Cycle Section -->
+
+      <!-- START: AI Dominance Section -->
+      <section id="why-ai-dominates" class="section">
+        <div class="container text-visual-grid">
+          <article data-reveal>
+            <h2>Why AI Companies Now Dominate Market Indices</h2>
+            <p>
+              The S&amp;P 500 and NASDAQ are market-cap weighted, meaning the
+              largest companies make up a disproportionate share of the index. As
+              AI companies like NVIDIA, Microsoft, Apple, Alphabet, and Meta have
+              grown to multi-trillion-dollar valuations, their price movements now
+              drive overall index performance.
+            </p>
+          </article>
+          <aside data-reveal data-delay="150">
+            <ul class="key-list">
+              <li>Market-cap weighting concentrates exposure in the largest AI firms.</li>
+              <li>Explosive AI revenue growth supports high valuations.</li>
+              <li>Institutional investors and ETFs create structural buying pressure.</li>
+              <li>Retail investor attention and media coverage amplify momentum.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+      <!-- END: AI Dominance Section -->
+
+      <!-- START: Background Summary Section -->
+      <section id="background-summary" class="section section-alt">
+        <div class="container">
+          <article class="glass-card summary-box" data-reveal>
+            <h2>Key Takeaways</h2>
+            <ul>
+              <li>
+                Stock markets price assets through supply and demand, now heavily
+                accelerated by AI algorithms.
+              </li>
+              <li>Algorithmic trading accounts for the majority of equity volume.</li>
+              <li>AI investment behavior tracks and can amplify the business cycle.</li>
+              <li>
+                Market-cap weighting means AI company performance can dominate index
+                returns.
+              </li>
+            </ul>
+            <a class="next-link" href="rise.html">
+              Next: The Rise of AI Companies
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+        </div>
+      </section>
+      <!-- END: Background Summary Section -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">The AI Market Effect</p>
+        <p class="muted">
+          A multi-page educational website on AI's influence on global stock
+          markets and the broader economy.
+        </p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="background.html">Background</a>
+          <a href="rise.html">Rise of AI</a>
+          <a href="economic-impact.html">Economic Impact</a>
+          <a href="risks.html">Risks</a>
+          <a href="regulation.html">Regulation</a>
+          <a href="sources.html">Sources</a>
+        </div>
+        <p class="credit">Semester Research Project</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+</html>
