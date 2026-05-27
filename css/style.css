@@ -1,15 +1,15 @@
 :root {
-  --color-background: #0a0f1e;
-  --color-surface: #111827;
-  --color-surface-raised: #1a2236;
+  --color-background: #1e293b;
+  --color-surface: #0f172a;
+  --color-surface-raised: #334155;
   --color-accent-blue: #3b82f6;
-  --color-accent-teal: #06b6d4;
-  --color-text-primary: #f1f5f9;
+  --color-accent-teal: #0d9488;
+  --color-text-primary: #f8fafc;
   --color-text-secondary: #94a3b8;
-  --color-border: #1e293b;
-  --color-shadow: rgba(0, 0, 0, 0.35);
-  --color-glass-bg: rgba(255, 255, 255, 0.04);
-  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-border: #334155;
+  --color-shadow: rgba(0, 0, 0, 0.15);
+  --color-glass-bg: #0f172a;
+  --color-glass-border: #334155;
   --gradient-accent: linear-gradient(
     120deg,
     var(--color-accent-blue) 0%,
@@ -155,8 +155,6 @@ ul {
   background: var(--color-glass-bg);
   border: 1px solid var(--color-glass-border);
   border-radius: var(--radius-md);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
 .muted {
@@ -205,7 +203,7 @@ ul {
   width: 100%;
   z-index: 30;
   border-bottom: 1px solid var(--color-border);
-  background: rgba(10, 15, 30, 0.65);
+  background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -281,32 +279,11 @@ main {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 20% 10%, rgba(59, 130, 246, 0.22), transparent 35%),
-    radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.18), transparent 30%),
-    linear-gradient(145deg, #090f20 0%, #0b1328 65%, #0a0f1e 100%);
+  background: var(--color-background);
 }
 
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px);
-  background-size: 30px 30px;
-  opacity: 0.25;
-  animation: drift 26s linear infinite;
-}
-
-@keyframes drift {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20px, -16px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
+  display: none;
 }
 
 .hero-content {
@@ -535,10 +512,10 @@ main {
 
 [data-reveal] {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(8px);
   transition:
-    opacity 500ms ease,
-    transform 500ms ease;
+    opacity 350ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 350ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-reveal].revealed {

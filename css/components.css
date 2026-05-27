@@ -256,18 +256,17 @@
 
 .svg-card svg line,
 .svg-card svg path {
-  transition: stroke-width 0.25s ease, filter 0.25s ease;
+  transition: stroke-width 0.25s ease;
 }
 
 
-/* Premium hover glow effect on main curves */
+/* Premium hover highlight on main curves */
 .svg-card svg line[stroke-width="3"] {
   transform-origin: center;
 }
 
 .svg-card svg line[stroke-width="3"]:hover {
   stroke-width: 4.5px !important;
-  filter: drop-shadow(0 0 5px var(--color-accent-blue));
   cursor: pointer;
 }
 

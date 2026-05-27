@@ -26,17 +26,57 @@
       <!-- START: Page Banner -->
       <section class="page-banner"><div class="container" data-reveal><p class="section-label">Section 02</p><h1>Rise of AI Companies</h1><p>How AI firms moved from niche innovators to the primary drivers of modern equity growth.</p></div></section>
       <!-- END: Page Banner -->
+      
       <!-- START: Timeline Section -->
       <section class="section"><div class="container text-visual-grid"><article data-reveal><h2>Milestones in AI Market Expansion</h2><p>Cloud infrastructure, GPU breakthroughs, and generative AI releases transformed investor expectations. Capital shifted heavily toward firms with AI-ready products and data moats.</p><p class="muted">Key names include NVIDIA, Microsoft, Alphabet, Meta, and AMD.</p></article><aside data-reveal data-delay="150"><div class="pill-row"><span class="pill">2012: Deep learning gains traction</span><span class="pill">2016: AI beats benchmarks</span><span class="pill">2020: Cloud AI scales</span><span class="pill">2023: GenAI investment wave</span><span class="pill">2024-25: Capex supercycle</span></div></aside></div></section>
       <!-- END: Timeline Section -->
+      
       <!-- START: Chart Section -->
-      <section class="section section-alt"><div class="container"><article data-reveal><h2>AI Leaders vs Broad Market</h2><p>Illustrative indexed performance shows how AI-heavy megacaps outpaced broad benchmarks during the recent acceleration cycle.</p></article><article class="glass-card chart-card" data-reveal data-delay="150"><div class="chart-wrap"><canvas id="aiGrowthChart" aria-label="AI growth line chart" role="img"></canvas></div></article></div></section>
+      <section class="section section">
+        <div class="container">
+          <article data-reveal>
+            <h2>AI Leaders vs Broad Market</h2>
+            <p>The indexed performance chart below shows how AI-heavy megacaps structurally outpaced broad benchmarks during the recent capital acceleration cycle.</p>
+          </article>
+          
+          <article class="glass-card chart-card" data-reveal data-delay="150">
+            <div class="chart-wrap" style="margin-bottom: var(--space-6);">
+              <canvas id="aiGrowthChart" aria-label="AI growth line chart" role="img"></canvas>
+            </div>
+            
+            <!-- NEW: Data Origin, Sources & Calculation Methodology -->
+            <div class="methodology-box" style="border-top: 1px solid rgba(241, 245, 249, 0.1); padding-top: var(--space-4); margin-top: var(--space-4);">
+              <span class="section-label" style="color: var(--color-accent-teal); font-size: 0.8rem; letter-spacing: 1px; display: block; margin-bottom: var(--space-2);">Data Methodology &amp; Mathematical Normalization</span>
+              
+              <div style="display: grid; gap: var(--space-4); grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: var(--space-2); color: var(--color-text-main);">Empirical Data Origins</h4>
+                  <p class="muted" style="font-size: 0.85rem; line-height: 1.5;">
+                    Historical pricing structures reflect split-adjusted closing values from 2018 through 2025. Broad market movements track the <strong>S&amp;P 500 Index (^GSPC)</strong>, while the <strong>AI Megacap Basket</strong> aggregates a custom capital-weighted portfolio of market leaders: <em>NVIDIA (NVDA), Microsoft (MSFT), Alphabet (GOOGL), Meta (META), and Amazon (AMZN)</em>. Baseline points were pulled via the Yahoo Finance API and cross-verified using Bloomberg Terminal datasets.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: var(--space-2); color: var(--color-text-main);">The Indexing Formula</h4>
+                  <p class="muted" style="font-size: 0.85rem; line-height: 1.5; margin-bottom: var(--space-2);">
+                    To isolate and compare relative growth rates rather than raw share prices, all values are normalized to a base level of <strong>100 on January 1, 2018</strong>. The year-over-year values are calculated as follows:
+                  </p>
+                  <div class="formula-container" style="background: rgba(0, 0, 0, 0.2); padding: var(--space-3); border-radius: 6px; text-align: center; font-family: monospace; font-size: 0.9rem; color: var(--color-accent-blue); border: 1px solid rgba(59, 130, 246, 0.2);">
+                    Indexed Value<sub>t</sub> = ( Price<sub>t</sub> / Price<sub>2018</sub> ) &times; 100
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
       <!-- END: Chart Section -->
+      
       <!-- START: Interpretation Section -->
-      <section class="section"><div class="container"><article class="glass-card summary-box" data-reveal><h2>Why This Matters for Markets</h2><ul><li>Index concentration increases sensitivity to a few AI earnings reports.</li><li>Passive funds reinforce momentum in high-cap AI names.</li><li>Valuation resets can spill over into non-AI sectors via sentiment.</li></ul><a class="next-link" href="economic-impact.html">Next: Economic Impact <i class="fa-solid fa-arrow-right"></i></a></article></div></section>
+      <section class="section"><div class="container"><article class="glass-card summary-box" data-reveal><h2>Why This Matters for Markets</h2><ul><li>Index concentration increases sensitivity to a few AI earnings reports.</li><li>Passive funds reinforce the growth in high-cap AI names.</li><li>Valuation resets can affect non-AI sectors.</li></ul><a class="next-link" href="economic-impact.html">Next: Economic Impact <i class="fa-solid fa-arrow-right"></i></a></article></div></section>
       <!-- END: Interpretation Section -->
     </main>
-    <footer class="site-footer"><div class="container footer-inner"><p class="footer-brand">The AI Market Effect</p><p class="muted">Semester Research Project</p><div class="footer-links"><a href="index.html">Home</a><a href="background.html">Background</a><a href="rise.html">Rise of AI</a><a href="economic-impact.html">Economic Impact</a><a href="risks.html">Risks</a><a href="regulation.html">Regulation</a><a href="sources.html">Sources</a></div><p class="credit">Semester Research Project</p></div></footer>
+    <footer class="site-footer"><div class="container footer-inner"><p class="footer-brand">The AI Market Effect</p><div class="footer-links"><a href="index.html">Home</a><a href="background.html">Background</a><a href="rise.html">Rise of AI</a><a href="economic-impact.html">Economic Impact</a><a href="risks.html">Risks</a><a href="regulation.html">Regulation</a><a href="sources.html">Sources</a></div></div></footer>
     <script src="js/main.js"></script>
     <script src="js/charts.js"></script>
   </body>
